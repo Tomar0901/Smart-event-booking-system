@@ -10,7 +10,7 @@ import EventDetails from "./pages/EventDetails";
 import TicketSelection from "./pages/TicketSelection";
 import PaymentPage from "./pages/PaymentPage";
 import BookingSuccess from "./pages/BookingSuccess";
-
+import MyBookings from "./admin/Bookings";
 
 function AdminLayout() {
   return (
@@ -49,7 +49,8 @@ const router = createBrowserRouter([
     element: <AdminLayout />,
     children: [
       { path: "dashboard", element: <AdminDashboard /> },
-      { path: "all_events", element: <ShowAllEvents /> }
+      { path: "all_events", element: <ShowAllEvents /> },
+      { path: "all-bookings", element: <MyBookings /> },
     ]
   },
   {
